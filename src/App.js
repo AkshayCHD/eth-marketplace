@@ -1,16 +1,18 @@
-import logo from './logo.svg';
-import NftList from './components/NftList';
-import MintNft from './components/MintNft';
-import './App.css';
+import logo from "./logo.svg";
+import NftList from "./components/NftList";
+import MintNft from "./components/MintNft";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Nft List</h1>
-      <NftList/>
-
-      <h1>Mint Nft</h1>
-      <MintNft/>
+      <h1>Client Dashboard </h1>
+      <hr />
+      <h2>Mint Nft</h2>
+      <MintNft />
+      <hr />
+      <h2>Nft List</h2>
+      <NftList />
     </div>
   );
 }

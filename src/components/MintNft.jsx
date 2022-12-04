@@ -9,14 +9,16 @@ export default function MintNft() {
   }, []);
   const onClick = async () => {
     try {
-        const result = await axios.get(`http://localhost:3030/mint-tokens?receiver=${receiverAddress}&name=${name}`);
-        console.log(result);
+      const result = await axios.get(
+        `http://localhost:3030/mint-tokens?receiver=${receiverAddress}&name=${name}`
+      );
+      console.log(result);
     } catch (error) {
       console.log(error);
     }
   };
   return (
-    <div>
+    <div className="form">
       <input
         type="text"
         placeholder="Enter receiver address"
@@ -32,7 +34,7 @@ export default function MintNft() {
         name="fname"
       ></input>
       <button onClick={onClick}>
-        Mint <span className="arrow">🡪</span>
+        Mint <span className="arrow"></span>
       </button>
     </div>
   );
